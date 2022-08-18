@@ -1,7 +1,7 @@
 const chaiexpect=require('chai').expect   
 describe('My Login application', async() => 
 {
-   it(' login with valid credentials', async () => 
+   it(' Dynamic dropdown list ', async () => 
     {//promise pending resolved,rejected
       await browser.url("https://rahulshettyacademy.com/AutomationPractice/")
        console.log(await browser.getTitle())
@@ -22,7 +22,11 @@ describe('My Login application', async() =>
        
       
     });
+    it(' Dynamic Drop down', async () => {
+      browser.url("https://rahulshettyacademy.com/AutomationPractice/")
 
+
+    })
     });
 
 
