@@ -1,4 +1,3 @@
-
 describe('My Login application', async() => 
 {
    xit('should login with valid credentials', async () => 
@@ -34,6 +33,7 @@ describe('My Login application', async() =>
        console.log(await $(".btn-primary").waitForExist())
        await expect(browser).toHaveUrlContaining("shop")
        await expect(browser).toHaveTitleContaining("ProtoCommerce")
+       await browser.saveRecordingScreen("recording.mpeg")
 
 
     });
